@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 const ActiveCity = ({ activeCity }) => {
   const { name, address, slug } = activeCity;
@@ -12,10 +11,10 @@ const ActiveCity = ({ activeCity }) => {
       <img src={`https://kitt.lewagon.com/placeholder/cities/${slug}`} alt={name} width="100%" />
     </div>
   );
-}
+};
 
 function mapStateToProps(state) {
-  return({
+  return ({
     activeCity: state.activeCity
   });
 }

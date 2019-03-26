@@ -2,7 +2,7 @@ const saoPaulo = {
   name: "São Paulo",
   address: "Rua Mourato Coelho, 1404 – Vila Madalena, São Paulo - SP",
   slug: "sao-paulo"
-}
+};
 
 const activeCityReducer = (state, action) => {
   if (state === undefined) {
@@ -15,6 +15,6 @@ const activeCityReducer = (state, action) => {
     default:
       return state;
   }
-}
+};
 
-export default activeCityReducer
+export default activeCityReducer;

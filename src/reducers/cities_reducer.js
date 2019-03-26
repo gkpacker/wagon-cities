@@ -1,5 +1,3 @@
-import cities from '../data/cities';
-
 const citiesReducer = (state, action) => {
   if (state === undefined) {
     return [];
@@ -11,6 +9,6 @@ const citiesReducer = (state, action) => {
     default:
       return state;
   }
-}
+};
 
 export default citiesReducer;

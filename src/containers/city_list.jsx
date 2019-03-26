@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import City from './city';
-import { setCities, selectCity } from '../actions'
+import { setCities, selectCity } from '../actions';
 
 class CityList extends Component {
   componentWillMount() {
@@ -15,7 +15,7 @@ class CityList extends Component {
 
     return (
       <div className="list-group cities">
-        {cities.map((city) => <City city={city} key={city.name} />)}
+        {cities.map(city => <City city={city} key={city.name} />)}
       </div>
     );
   }
@@ -29,10 +29,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    {
-      setCities: setCities,
-      selectCity: selectCity
-    },
+    { setCities, selectCity },
     dispatch
   );
 }
